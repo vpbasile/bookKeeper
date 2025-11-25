@@ -4,8 +4,8 @@
     "title": "Exhalation",
     "author": "Ted Chiang",
     "genreIds": ["sf", "shorts", "speculative"],
-    "readByMe": false,
-    "platforms": ["kindle"]
+    "readByMe": true,
+    "platformIds": ["kindle"]
   },
   "book_0002": {
     "id": "book_0002",
@@ -54,7 +54,8 @@
     "title": "All Systems Red",
     "author": "Martha Wells",
     "genreIds": ["sf", "speculative"],
-    "readByMe": false
+    "readByMe": false,
+    "series": "Murderbot"
   },
   "book_0009": {
     "id": "book_0009",
@@ -82,14 +83,16 @@
     "title": "Dawn",
     "author": "Octavia Butler",
     "genreIds": ["sf", "speculative"],
-    "readByMe": false
+    "readByMe": false,
+    "platformIds": ["audible"]
   },
   "book_0013": {
     "id": "book_0013",
     "title": "The Three-Body Problem",
     "author": "Liu Cixin",
     "genreIds": ["sf", "speculative"],
-    "readByMe": false
+    "readByMe": false,
+    "platformIds": ["audiobooks-com"]
   },
   "book_0014": {
     "id": "book_0014",
@@ -149,7 +152,7 @@
     "genreIds": ["resistance", "historical-fiction"],
     "series": null,
     "readByMe": true,
-    "platforms": ["audible"]
+    "platformIds": ["audible"]
   },
   "book_0022": {
     "id": "book_0022",
@@ -157,7 +160,8 @@
     "author": "Andy Weir",
     "genreIds": ["sf", "speculative"],
     "series": null,
-    "readByMe": true
+    "readByMe": true,
+    "platformIds": ["audible"]
   },
   "book_0023": {
     "id": "book_0023",
@@ -166,7 +170,7 @@
     "genreIds": ["sf", "speculative", "political"],
     "series": "Dune",
     "readByMe": true,
-    "platforms": ["libby"]
+    "platformIds": ["libby"]
   },
   "book_0024": {
     "id": "book_0024",
@@ -174,7 +178,8 @@
     "author": "Liane Moriarty",
     "genreIds": ["contemporary-fiction"],
     "series": null,
-    "readByMe": true
+    "readByMe": true,
+    "platformIds": ["libby"]
   },
   "book_0025": {
     "id": "book_0025",
@@ -182,7 +187,8 @@
     "author": "Philip Pullman",
     "genreIds": ["fantasy", "speculative"],
     "series": "His Dark Materials",
-    "readByMe": true
+    "readByMe": true,
+    "platformIds": ["libby"]
   },
   "book_0026": {
     "id": "book_0026",
@@ -191,7 +197,7 @@
     "genreIds": ["sf", "speculative"],
     "series": null,
     "readByMe": true,
-    "platforms": ["audible"]
+    "platformIds": ["audible"]
   },
   "book_0027": {
     "id": "book_0027",
@@ -200,33 +206,34 @@
     "genreIds": ["contemporary-fiction"],
     "series": null,
     "readByMe": true,
-    "platforms": ["audible"]
+    "platformIds": ["audible"]
   },
   "book_0028": {
     "id": "book_0028",
     "title": "Yes Please",
     "author": "Amy Poehler",
-    "genreIds": ["biography", "memoir"],
+    "genreIds": ["biography"],
     "series": null,
     "readByMe": true,
-    "platforms": ["audible"]
+    "platformIds": ["audible"]
   },
   "book_0029": {
     "id": "book_0029",
     "title": "Bossypants",
     "author": "Tina Fey",
-    "genreIds": ["biography", "memoir"],
+    "genreIds": ["biography"],
     "series": null,
     "readByMe": true,
-    "platforms": ["audible"]
+    "platformIds": ["audible"]
   },
   "book_0030": {
     "id": "book_0030",
     "title": "Born Standing Up",
     "author": "Steve Martin",
-    "genreIds": ["biography", "memoir"],
+    "genreIds": ["biography"],
     "series": null,
-    "readByMe": true
+    "readByMe": true,
+    "platformIds": ["audible"]
   },
   "book_0031": {
     "id": "book_0031",
@@ -235,7 +242,7 @@
     "genreIds": ["nonfiction"],
     "series": null,
     "readByMe": true,
-    "platforms": ["audible"]
+    "platformIds": ["audible"]
   },
   "book_0032": {
     "id": "book_0032",
@@ -243,16 +250,17 @@
     "author": "Michael Pollan",
     "genreIds": ["nonfiction"],
     "series": null,
-    "readByMe": true
+    "readByMe": true,
+    "platformIds": ["audible"]
   },
   "book_0033": {
     "id": "book_0033",
     "title": "Gumption",
     "author": "Nick Offerman",
-    "genreIds": ["nonfiction", "memoir"],
+    "genreIds": ["nonfiction", "biography"],
     "series": null,
     "readByMe": true,
-    "platforms": ["audible"]
+    "platformIds": ["audible"]
   },
   "book_0034": {
     "id": "book_0034",
@@ -261,7 +269,7 @@
     "genreIds": ["nonfiction"],
     "series": null,
     "readByMe": true,
-    "platforms": ["audible"]
+    "platformIds": ["audible"]
   },
   "book_0035": {
     "id": "book_0035",
@@ -269,8 +277,8 @@
     "author": "Matt Dinniman",
     "genreIds": ["sf", "fantasy"],
     "series": "Dungeon Crawler Carl",
-    "readByMe": false,
-    "platforms": ["audible"]
+    "readByMe": true,
+    "platformIds": ["audible"]
   },
   "book_0036": {
     "id": "book_0036",
@@ -278,8 +286,8 @@
     "author": "Ursula K. Le Guin",
     "genreIds": ["fantasy", "speculative"],
     "series": "Earthsea",
-    "readByMe": false,
-    "platforms": ["audible"]
+    "readByMe": true,
+    "platformIds": ["audible"]
   },
   "book_0037": {
     "id": "book_0037",
@@ -287,8 +295,8 @@
     "author": "John Scalzi",
     "genreIds": ["sf", "speculative"],
     "series": null,
-    "readByMe": false,
-    "platforms": ["audible"]
+    "readByMe": true,
+    "platformIds": ["audible"]
   },
   "book_0038": {
     "id": "book_0038",
@@ -296,8 +304,8 @@
     "author": "Ray Bradbury",
     "genreIds": ["sf", "speculative"],
     "series": null,
-    "readByMe": false,
-    "platforms": ["audible"]
+    "readByMe": true,
+    "platformIds": ["audible"]
   },
   "book_0039": {
     "id": "book_0039",
@@ -305,8 +313,8 @@
     "author": "Mark Haddon",
     "genreIds": ["contemporary-fiction"],
     "series": null,
-    "readByMe": false,
-    "platforms": ["audible"]
+    "readByMe": true,
+    "platformIds": ["audible"]
   },
   "book_0040": {
     "id": "book_0040",
@@ -314,8 +322,8 @@
     "author": "Brandon Sanderson",
     "genreIds": ["fantasy"],
     "series": "The Stormlight Archive",
-    "readByMe": false,
-    "platforms": ["audible"]
+    "readByMe": true,
+    "platformIds": ["audible"]
   },
   "book_0041": {
     "id": "book_0041",
@@ -323,8 +331,8 @@
     "author": "Various",
     "genreIds": ["fantasy"],
     "series": null,
-    "readByMe": false,
-    "platforms": ["audible"]
+    "readByMe": true,
+    "platformIds": ["audible"]
   },
   "book_0042": {
     "id": "book_0042",
@@ -332,8 +340,8 @@
     "author": "John Scalzi",
     "genreIds": ["sf", "speculative"],
     "series": null,
-    "readByMe": false,
-    "platforms": ["audible"]
+    "readByMe": true,
+    "platformIds": ["audible"]
   },
   "book_0043": {
     "id": "book_0043",
@@ -341,8 +349,8 @@
     "author": "John Scalzi",
     "genreIds": ["sf", "speculative"],
     "series": null,
-    "readByMe": false,
-    "platforms": ["audible"]
+    "readByMe": true,
+    "platformIds": ["audible"]
   },
   "book_0044": {
     "id": "book_0044",
@@ -350,8 +358,8 @@
     "author": "Andy Weir",
     "genreIds": ["sf", "speculative"],
     "series": null,
-    "readByMe": false,
-    "platforms": ["audible"]
+    "readByMe": true,
+    "platformIds": ["audible"]
   },
   "book_0045": {
     "id": "book_0045",
@@ -359,8 +367,8 @@
     "author": "Sue Lynn Tan",
     "genreIds": ["fantasy"],
     "series": "The Celestial Kingdom",
-    "readByMe": false,
-    "platforms": ["chirp"]
+    "readByMe": true,
+    "platformIds": ["chirp"]
   },
   "book_0046": {
     "id": "book_0046",
@@ -368,8 +376,8 @@
     "author": "Becky Chambers",
     "genreIds": ["sf", "speculative"],
     "series": "Wayfarers",
-    "readByMe": false,
-    "platforms": ["chirp"]
+    "readByMe": true,
+    "platformIds": ["chirp"]
   },
   "book_0047": {
     "id": "book_0047",
@@ -377,8 +385,8 @@
     "author": "Becky Chambers",
     "genreIds": ["sf", "speculative"],
     "series": "Monk & Robot",
-    "readByMe": false,
-    "platforms": ["chirp"]
+    "readByMe": true,
+    "platformIds": ["chirp"]
   },
   "book_0048": {
     "id": "book_0048",
@@ -386,8 +394,8 @@
     "author": "Neil Gaiman",
     "genreIds": ["fantasy", "speculative"],
     "series": null,
-    "readByMe": false,
-    "platforms": ["chirp"]
+    "readByMe": true,
+    "platformIds": ["chirp"]
   },
   "book_0049": {
     "id": "book_0049",
@@ -395,8 +403,8 @@
     "author": "Brandon Sanderson",
     "genreIds": ["fantasy"],
     "series": null,
-    "readByMe": false,
-    "platforms": ["chirp"]
+    "readByMe": true,
+    "platformIds": ["chirp"]
   },
   "book_0050": {
     "id": "book_0050",
@@ -404,8 +412,8 @@
     "author": "Brandon Sanderson",
     "genreIds": ["fantasy", "sf"],
     "series": null,
-    "readByMe": false,
-    "platforms": ["chirp"]
+    "readByMe": true,
+    "platformIds": ["chirp"]
   },
   "book_0051": {
     "id": "book_0051",
@@ -413,8 +421,8 @@
     "author": "Brandon Sanderson",
     "genreIds": ["fantasy"],
     "series": null,
-    "readByMe": false,
-    "platforms": ["chirp"]
+    "readByMe": true,
+    "platformIds": ["chirp"]
   },
   "book_0052": {
     "id": "book_0052",
@@ -422,7 +430,7 @@
     "author": "Brandon Sanderson",
     "genreIds": ["fantasy"],
     "series": null,
-    "readByMe": false,
-    "platforms": ["chirp"]
+    "readByMe": true,
+    "platformIds": ["chirp"]
   }
 }

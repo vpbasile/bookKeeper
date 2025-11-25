@@ -5,10 +5,15 @@ export type TBook = {
     genreIds: string[];   // references TGenre.id, e.g. ["sf", "weird"]
     series?: string | null;
     readByMe?: boolean; // true if already read
-    platforms?: TPlatform[]; // platforms where the book is owned
+    platformIds?: string[]; // references TPlatform.id
 };
 
-export type TPlatform = "paperback" | "hardback" | "audible" | "chirp" | "audiobooks-com" | "kindle" | "libby";
+export type TPlatform = {
+    id: string;             // machine-readable (e.g., "audible", "kindle")
+    name: string;           // human-readable
+    type: "audiobook" | "ebook" | "physical";
+    description?: string;   // optional text explaining the platform
+};
 
 export type TBookshelf = {
     id: string;

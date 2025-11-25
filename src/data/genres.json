@@ -62,11 +62,37 @@
   {
     "id": "political",
     "name": "Political",
-    "description": ""
+    "category": "theme",
+    "description": "Stories centered on power, governance, and political intrigue."
   },
   {
     "id": "historical-fiction",
     "name": "Historical Fiction",
-    "description": ""
+    "category": "fiction",
+    "description": "Fictional stories set in historical periods."
+  },
+  {
+    "id": "contemporary-fiction",
+    "name": "Contemporary Fiction",
+    "category": "fiction",
+    "description": "Realistic fiction set in the present day."
+  },
+  {
+    "id": "biography",
+    "name": "Biography & Memoir",
+    "category": "nonfiction",
+    "description": "True stories about people's lives, written by themselves or others."
+  },
+  {
+    "id": "nonfiction",
+    "name": "Nonfiction",
+    "category": "nonfiction",
+    "description": "Informative works based on facts and real events."
+  },
+  {
+    "id": "lgbtq",
+    "name": "LGBTQ+",
+    "category": "cultural",
+    "description": "Stories featuring LGBTQ+ characters and themes."
   }
 ]

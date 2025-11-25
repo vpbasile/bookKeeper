@@ -1,0 +1,44 @@
+[
+  {
+    "id": "audible",
+    "name": "Audible",
+    "type": "audiobook",
+    "description": "Amazon's audiobook platform"
+  },
+  {
+    "id": "chirp",
+    "name": "Chirp",
+    "type": "audiobook",
+    "description": "Chirp audiobook deals"
+  },
+  {
+    "id": "audiobooks-com",
+    "name": "Audiobooks.com",
+    "type": "audiobook",
+    "description": "Audiobooks.com subscription service"
+  },
+  {
+    "id": "libby",
+    "name": "Libby",
+    "type": "audiobook",
+    "description": "Library audiobooks via Libby app"
+  },
+  {
+    "id": "kindle",
+    "name": "Kindle",
+    "type": "ebook",
+    "description": "Amazon Kindle ebooks"
+  },
+  {
+    "id": "paperback",
+    "name": "Paperback",
+    "type": "physical",
+    "description": "Physical paperback book"
+  },
+  {
+    "id": "hardback",
+    "name": "Hardback",
+    "type": "physical",
+    "description": "Physical hardcover book"
+  }
+]

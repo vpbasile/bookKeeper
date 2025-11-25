@@ -5,6 +5,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import books from '../data/books.json';
 import { readBooks, unreadBooks } from '../data/filters';
 import genres from '../data/genres.json';
+import platforms from '../data/platforms.json';
 import { TBook } from '../types';
 import CollapsibleShelf from './CollapsibleShelf';
 
@@ -61,9 +62,9 @@ export default function BookList({ filter }: BookListProps) {
             case 'unread':
                 return unreadBooks();
             case 'unowned':
-                return allBooks.filter(book => !book.platforms || book.platforms.length === 0);
+                return allBooks.filter(book => !book.platformIds || book.platformIds.length === 0);
             case 'owned':
-                return allBooks.filter(book => book.platforms && book.platforms.length > 0);
+                return allBooks.filter(book => book.platformIds && book.platformIds.length > 0);
             default:
                 return allBooks;
         }
@@ -110,11 +111,13 @@ export default function BookList({ filter }: BookListProps) {
                 }, {} as Record<string, TBook[]>);
             case 'platform':
                 return sorted.reduce((acc, book) => {
-                    if (book.platforms && book.platforms.length > 0) {
-                        book.platforms.forEach(platform => {
-                            if (!acc[platform]) acc[platform] = [];
-                            if (!acc[platform].includes(book)) {
-                                acc[platform].push(book);
+                    if (book.platformIds && book.platformIds.length > 0) {
+                        book.platformIds.forEach(platformId => {
+                            const platform = platforms.find(p => p.id === platformId);
+                            const platformName = platform?.name || platformId;
+                            if (!acc[platformName]) acc[platformName] = [];
+                            if (!acc[platformName].includes(book)) {
+                                acc[platformName].push(book);
                             }
                         });
                     } else {

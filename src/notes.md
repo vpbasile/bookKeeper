@@ -11,3 +11,6 @@ To implement this feature, I will need to:
 - Modify the UI to allow users to select and view the platforms associated with each book
 - Create functions to add or remove platforms from a book's record
 - Create a function that updates the books file with the new platform information whenever a book is added or modified
+
+
+Group by series
