@@ -3,8 +3,10 @@ import bookList from './books.json'
 
 const originalList = Object.values(bookList)
 
-// TODO: Constrain the groupBy to my desired list
-export function unreadBooks(groupBy?: "genre" | "",): TBook[] {
+// Define valid grouping options based on TBook fields that are suitable for grouping
+export type TGroupByOption = 'author' | 'genreIds' | 'series' | 'readByMe';
+
+export function unreadBooks(groupBy?: TGroupByOption): TBook[] {
     // Filter to only books I have not read
     const unFilteredList: TBook[] = originalList
     const filteredList = unFilteredList.filter(eachBook => !(eachBook.readByMe))
@@ -15,7 +17,7 @@ export function unreadBooks(groupBy?: "genre" | "",): TBook[] {
 
 }
 
-export function readBooks(groupBy?: "genre" | "",): TBook[] {
+export function readBooks(groupBy?: TGroupByOption): TBook[] {
     // Filter to only books I have read
     const unFilteredList: TBook[] = originalList
     const filteredList = unFilteredList.filter(eachBook => (eachBook.readByMe))
