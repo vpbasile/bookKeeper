@@ -11,8 +11,8 @@ export default function Header() {
     >
         <Link to="/"><Text size={'3xl'} color='green'>bookKeeper</Text></Link>
         {/* <Link to={"/about"} ><Text size={'3xl'}>About Page</Text></Link> */}
-        <Link to={"/all"} ><Text size={'3xl'}>All Books</Text></Link>
+        {/* <Link to={"/all"} ><Text size={'3xl'}>All Books</Text></Link>
         <Link to={"/read"} ><Text size={'3xl'}>Read Books</Text></Link>
-        <Link to={"/unread"} ><Text size={'3xl'}>Unread Books</Text></Link>
+        <Link to={"/unread"} ><Text size={'3xl'}>Unread Books</Text></Link> */}
     </Flex>
 }
