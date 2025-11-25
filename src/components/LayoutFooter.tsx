@@ -1,6 +1,6 @@
 import { LinkIcon } from "@chakra-ui/icons";
 import { Box, Button, ButtonGroup, Link, Text } from "@chakra-ui/react";
-import ColorModeButton from "./colorModeButton";
+import ColorModeButton from "./ColorModeButton";
 
 export default function Footer() {
     return (<Box id="footer" textAlign={'right'} borderTop={`2px`} marginTop={'xl'}>

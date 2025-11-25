@@ -24,12 +24,12 @@ export default function Layout() {
             </Button>
             <Collapse in={isOpen}>
                 {/* Filter:read/unread/all */}
-                <Text>Filter:</Text>
+                {/* <Text>Filter:</Text>
                 <ButtonGroup isAttached variant="subtle" colorScheme="green" ml={4}>
                     <Button>All</Button>
                     <Button>Read</Button>
                     <Button>Unread</Button>
-                </ButtonGroup>
+                </ButtonGroup> */}
                 {/* Sort by: title/author */}
                 <Text>Sort by:</Text>
                 <ButtonGroup isAttached variant="subtle" ml={4}>
