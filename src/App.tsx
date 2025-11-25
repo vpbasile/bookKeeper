@@ -1,26 +1,17 @@
 import { Route, Routes } from "react-router-dom";
-import CollapsibleShelf from "./components/CollapsibleShelf";
-import Home from "./components/Homepage";
+import BookList from "./components/BookList";
 import Layout from "./components/Layout";
-import books from "./data/books.json";
-import { readBooks, unreadBooks } from "./data/filters";
 
 function App() {
-
   return (
-    // {/* Routes nest inside one another. Nested route paths build upon
-    //         parent route paths, and nested route elements render inside
-    //         parent route elements. See the note about <Outlet> below. */}
-
-    < Routes >
+    <Routes>
       <Route path='/' element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="read" element={<CollapsibleShelf title="Books I've Read" books={readBooks()} />} />
-        <Route path="unread" element={<CollapsibleShelf title="Books I Want to Read" books={unreadBooks()} />} />
-        <Route path="all" element={<CollapsibleShelf title="All Books" books={Object.values(books)} />} />
-        {/* <Route path="about" element={<About />} /> */}
+        <Route index element={<BookList filter="all" />} />
+        <Route path="all" element={<BookList filter="all" />} />
+        <Route path="read" element={<BookList filter="read" />} />
+        <Route path="unread" element={<BookList filter="unread" />} />
       </Route>
-    </Routes >
+    </Routes>
   )
 }
 
