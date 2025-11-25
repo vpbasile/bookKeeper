@@ -10,7 +10,7 @@ export function unreadBooks(groupBy?: TGroupByOption): TBook[] {
     // Filter to only books I have not read
     const unFilteredList: TBook[] = originalList
     const filteredList = unFilteredList.filter(eachBook => !(eachBook.readByMe))
-    if (groupBy !== null) {
+    if (groupBy !== undefined) {
         // filteredList.sort()
     }
     return filteredList
@@ -21,7 +21,7 @@ export function readBooks(groupBy?: TGroupByOption): TBook[] {
     // Filter to only books I have read
     const unFilteredList: TBook[] = originalList
     const filteredList = unFilteredList.filter(eachBook => (eachBook.readByMe))
-    if (groupBy !== null) {
+    if (groupBy !== undefined) {
         // filteredList.sort()
     }
     return filteredList
