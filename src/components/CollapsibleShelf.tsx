@@ -48,7 +48,7 @@ export default function CollapsibleShelf({ title, books }: CollapsibleShelfProps
                                 </Text>
                             </Box>
                             <Badge colorScheme={book.readByMe ? "green" : "yellow"}>
-                                {book.readByMe ? "Read" : "Not Read"}
+                                {book.readByMe ? "Read" : "Unread"}
                             </Badge>
                         </HStack>
                     ))}
