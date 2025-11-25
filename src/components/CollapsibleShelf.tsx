@@ -1,19 +1,26 @@
 import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
-import { Badge, Box, Collapse, HStack, Heading, IconButton, StackDivider, Text, VStack, useDisclosure } from "@chakra-ui/react";
+import { Box, Collapse, HStack, Heading, IconButton, StackDivider, Text, VStack, useDisclosure } from "@chakra-ui/react";
+import { useEffect } from "react";
 import { TBook } from "../types";
 import CountBadge from "./CountBadge";
 
 interface CollapsibleShelfProps {
     title: string;
     books: TBook[];
+    isOpen?: boolean;
 }
 
-export default function CollapsibleShelf({ title, books }: CollapsibleShelfProps) {
-    const { isOpen, onToggle } = useDisclosure({ defaultIsOpen: true });
+export default function CollapsibleShelf({ title, books, isOpen: externalIsOpen }: CollapsibleShelfProps) {
+    const { isOpen, onToggle, onOpen, onClose } = useDisclosure({ defaultIsOpen: false });
+
+    useEffect(() => {
+        if (externalIsOpen !== undefined) {
+            externalIsOpen ? onOpen() : onClose();
+        }
+    }, [externalIsOpen, onOpen, onClose]);
 
     return (
         <Box
-            id={`${title.replace(/\s+/g, '-').toLowerCase()}-shelf`}
             p={5}
             shadow="md"
             borderWidth="1px"
@@ -43,13 +50,10 @@ export default function CollapsibleShelf({ title, books }: CollapsibleShelfProps
                         <HStack key={book.id} justify="space-between">
                             <Box>
                                 <Text fontWeight="bold">{book.title}</Text>
-                                <Text fontSize="sm">
+                                <Text fontSize="sm" color="gray.600">
                                     {book.author}
                                 </Text>
                             </Box>
-                            <Badge colorScheme={book.readByMe ? "green" : "yellow"}>
-                                {book.readByMe ? "Read" : "Unread"}
-                            </Badge>
                         </HStack>
                     ))}
                 </VStack>

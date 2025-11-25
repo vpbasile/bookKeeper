@@ -1,4 +1,5 @@
 import { Box, Button, ButtonGroup, Text, VStack } from '@chakra-ui/react';
+import { useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import books from '../data/books.json';
 import { readBooks, unreadBooks } from '../data/filters';
@@ -13,6 +14,7 @@ interface BookListProps {
 export default function BookList({ filter }: BookListProps) {
     const [searchParams, setSearchParams] = useSearchParams();
     const navigate = useNavigate();
+    const [expandAll, setExpandAll] = useState(false);
 
     const groupBy = searchParams.get('groupBy') || 'none';
     const sortBy = searchParams.get('sortBy') || 'title';
@@ -93,7 +95,7 @@ export default function BookList({ filter }: BookListProps) {
                 </ButtonGroup>
 
                 <Text fontWeight="bold" mb={2}>Group by:</Text>
-                <ButtonGroup size="sm">
+                <ButtonGroup size="sm" mb={4}>
                     <Button colorScheme={groupBy === 'none' ? 'blue' : 'gray'} onClick={() => updateParam('groupBy', 'none')}>None</Button>
                     <Button colorScheme={groupBy === 'genre' ? 'blue' : 'gray'} onClick={() => updateParam('groupBy', 'genre')}>Genre</Button>
                     <Button colorScheme={groupBy === 'status' ? 'blue' : 'gray'} onClick={() => updateParam('groupBy', 'status')}>Status</Button>
@@ -105,10 +107,15 @@ export default function BookList({ filter }: BookListProps) {
                     <Button colorScheme={sortBy === 'title' ? 'blue' : 'gray'} onClick={() => updateParam('sortBy', 'title')}>Title</Button>
                     <Button colorScheme={sortBy === 'author' ? 'blue' : 'gray'} onClick={() => updateParam('sortBy', 'author')}>Author</Button>
                 </ButtonGroup>
+                <Text fontWeight="bold" mb={2}>Expand:</Text>
+                <ButtonGroup size="sm" mb={4}>
+                    <Button size="sm" onClick={() => setExpandAll(true)}>Expand All</Button>
+                    <Button size="sm" onClick={() => setExpandAll(false)}>Collapse All</Button>
+                </ButtonGroup>
             </Box>
 
             {Object.entries(groupedBooks).map(([title, bookList]) => (
-                <CollapsibleShelf key={title} title={title} books={bookList} />
+                <CollapsibleShelf key={title} title={title} books={bookList} isOpen={expandAll} />
             ))}
         </VStack>
     );
