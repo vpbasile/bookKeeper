@@ -13,6 +13,7 @@ export default function CollapsibleShelf({ title, books }: CollapsibleShelfProps
 
     return (
         <Box
+            id={`${title.replace(/\s+/g, '-').toLowerCase()}-shelf`}
             p={5}
             shadow="md"
             borderWidth="1px"
@@ -42,7 +43,7 @@ export default function CollapsibleShelf({ title, books }: CollapsibleShelfProps
                         <HStack key={book.id} justify="space-between">
                             <Box>
                                 <Text fontWeight="bold">{book.title}</Text>
-                                <Text fontSize="sm" color="gray.600">
+                                <Text fontSize="sm">
                                     {book.author}
                                 </Text>
                             </Box>

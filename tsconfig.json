@@ -20,6 +20,5 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "ignores/readingList.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
