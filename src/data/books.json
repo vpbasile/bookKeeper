@@ -92,7 +92,7 @@
     "author": "Liu Cixin",
     "genreIds": ["sf", "speculative"],
     "readByMe": false,
-    "platformIds": ["audiobook"]
+    "platformIds": ["audiobooks-com"]
   },
   "book_0014": {
     "id": "book_0014",
@@ -323,7 +323,7 @@
     "genreIds": ["fantasy"],
     "series": "The Stormlight Archive",
     "readByMe": true,
-    "platformIds": ["audible","hardback"]
+    "platformIds": ["audible", "hardback"]
   },
   "book_0041": {
     "id": "book_0041",
@@ -522,6 +522,101 @@
     "author": "Fonda Lee",
     "genreIds": ["fantasy"],
     "series": "Green Bone Saga",
+    "readByMe": false
+  },
+  "book_0064": {
+    "id": "book_0064",
+    "title": "Republic of Memory",
+    "author": "Mahmud El Sayed",
+    "genreIds": ["sf", "speculative"],
+    "readByMe": false
+  },
+  "book_0065": {
+    "id": "book_0065",
+    "title": "Rakesfall",
+    "author": "Vajra Chandrasekera",
+    "genreIds": ["fantasy", "speculative"],
+    "readByMe": false
+  },
+  "book_0066": {
+    "id": "book_0066",
+    "title": "We Burned So Bright",
+    "author": "TJ Klune",
+    "genreIds": ["speculative", "lgbtq"],
+    "readByMe": false
+  },
+  "book_0067": {
+    "id": "book_0067",
+    "title": "Mycelium Running",
+    "author": "Paul Stamets",
+    "genreIds": ["nonfiction"],
+    "readByMe": false
+  },
+  "book_0068": {
+    "id": "book_0068",
+    "title": "Paranoia: A Psychologist's Journey Into Extreme Mistrust and Anxiety",
+    "author": "Joseph Finder",
+    "genreIds": ["nonfiction"],
+    "readByMe": false
+  },
+  "book_0069": {
+    "id": "book_0069",
+    "title": "Against Our Will",
+    "author": "Susan Brownmiller",
+    "genreIds": ["nonfiction", "political"],
+    "readByMe": false
+  },
+  "book_0070": {
+    "id": "book_0070",
+    "title": "Native Nations: A Millennium in North America",
+    "author": "Kathleen DuVal",
+    "genreIds": ["nonfiction"],
+    "readByMe": false
+  },
+  "book_0071": {
+    "id": "book_0071",
+    "title": "Breath: The New Science of a Lost Art",
+    "author": "James Nestor",
+    "genreIds": ["nonfiction"],
+    "readByMe": false
+  },
+  "book_0072": {
+    "id": "book_0072",
+    "title": "Becoming Earth",
+    "author": "Ferris Jabr",
+    "genreIds": ["nonfiction"],
+    "series": null,
+    "readByMe": false
+  },
+  "book_0073": {
+    "id": "book_0073",
+    "title": "A Brief History of Earth",
+    "author": "Andrew H. Knoll",
+    "genreIds": ["nonfiction"],
+    "series": null,
+    "readByMe": false
+  },
+  "book_0074": {
+    "id": "book_0074",
+    "title": "Bowling Alone",
+    "author": "Robert D. Putnam",
+    "genreIds": ["nonfiction"],
+    "readByMe": false
+  },
+  "book_0075": {
+    "id": "book_0075",
+    "title": "The Golden Arches in Black America",
+    "author": "Marcia Chatelain",
+    "genreIds": ["nonfiction", "political"],
+    "series": null,
+    "readByMe": false
+  },
+  "book_0076": {
+    "id": "book_0076",
+    "title": "Heretical Fishing",
+    "author": "Haylock Jobson",
+    "genreIds": ["fantasy"],
+    "series": "Heretical Fishing",
     "readByMe": false
   }
 }

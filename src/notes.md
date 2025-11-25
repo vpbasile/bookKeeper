@@ -14,3 +14,5 @@ To implement this feature, I will need to:
 
 
 Group by series
+
+Maybe separate read and unread into separate json files
