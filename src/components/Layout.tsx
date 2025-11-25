@@ -1,7 +1,7 @@
 import { Box, Button, ButtonGroup, Collapse, HStack, Text, VStack } from '@chakra-ui/react';
 import { useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import SandboxFooter from './footer';
+import SandboxFooter from './LayoutFooter';
 
 export default function Layout() {
 

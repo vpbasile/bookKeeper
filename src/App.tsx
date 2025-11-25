@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import CollapsibleShelf from "./components/CollapsibleShelf";
 import Home from "./components/Homepage";
-import Layout from "./components/layout";
+import Layout from "./components/Layout";
 import books from "./data/books.json";
 import { readBooks, unreadBooks } from "./data/filters";
 
