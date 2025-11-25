@@ -4,7 +4,8 @@
     "title": "Exhalation",
     "author": "Ted Chiang",
     "genreIds": ["sf", "shorts", "speculative"],
-    "readByMe": false
+    "readByMe": false,
+    "platforms": ["kindle"]
   },
   "book_0002": {
     "id": "book_0002",
@@ -141,19 +142,117 @@
     "series": "Discworld",
     "readByMe": false
   },
-   "book_0021": {
+  "book_0021": {
     "id": "book_0021",
     "title": "Babel",
     "author": "R.F. Kuang",
     "genreIds": ["resistance", "historical-fiction"],
     "series": null,
-    "readByMe": true
+    "readByMe": true,
+    "platforms": ["audible"]
   },
   "book_0022": {
     "id": "book_0022",
     "title": "Project Hail Mary",
     "author": "Andy Weir",
     "genreIds": ["sf", "speculative"],
+    "series": null,
+    "readByMe": true
+  },
+  "book_0023": {
+    "id": "book_0023",
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "genreIds": ["sf", "speculative", "political"],
+    "series": "Dune",
+    "readByMe": true,
+    "platforms": ["libby"]
+  },
+  "book_0024": {
+    "id": "book_0024",
+    "title": "Nine Perfect Strangers",
+    "author": "Liane Moriarty",
+    "genreIds": ["contemporary-fiction"],
+    "series": null,
+    "readByMe": true
+  },
+  "book_0025": {
+    "id": "book_0025",
+    "title": "The Golden Compass",
+    "author": "Philip Pullman",
+    "genreIds": ["fantasy", "speculative"],
+    "series": "His Dark Materials",
+    "readByMe": true
+  },
+  "book_0026": {
+    "id": "book_0026",
+    "title": "Artemis",
+    "author": "Andy Weir",
+    "genreIds": ["sf", "speculative"],
+    "series": null,
+    "readByMe": true
+  },
+  "book_0027": {
+    "id": "book_0027",
+    "title": "The Casual Vacancy",
+    "author": "J.K. Rowling",
+    "genreIds": ["contemporary-fiction"],
+    "series": null,
+    "readByMe": true
+  },
+  "book_0028": {
+    "id": "book_0028",
+    "title": "Yes Please",
+    "author": "Amy Poehler",
+    "genreIds": ["biography", "memoir"],
+    "series": null,
+    "readByMe": true
+  },
+  "book_0029": {
+    "id": "book_0029",
+    "title": "Bossypants",
+    "author": "Tina Fey",
+    "genreIds": ["biography", "memoir"],
+    "series": null,
+    "readByMe": true
+  },
+  "book_0030": {
+    "id": "book_0030",
+    "title": "Born Standing Up",
+    "author": "Steve Martin",
+    "genreIds": ["biography", "memoir"],
+    "series": null,
+    "readByMe": true
+  },
+  "book_0031": {
+    "id": "book_0031",
+    "title": "The Botany of Desire",
+    "author": "Michael Pollan",
+    "genreIds": ["nonfiction"],
+    "series": null,
+    "readByMe": true
+  },
+  "book_0032": {
+    "id": "book_0032",
+    "title": "Cooked",
+    "author": "Michael Pollan",
+    "genreIds": ["nonfiction"],
+    "series": null,
+    "readByMe": true
+  },
+  "book_0033": {
+    "id": "book_0033",
+    "title": "Gumption",
+    "author": "Nick Offerman",
+    "genreIds": ["nonfiction", "memoir"],
+    "series": null,
+    "readByMe": true
+  },
+  "book_0034": {
+    "id": "book_0034",
+    "title": "Every Tool's a Hammer",
+    "author": "Adam Savage",
+    "genreIds": ["nonfiction"],
     "series": null,
     "readByMe": true
   }

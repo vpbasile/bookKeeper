@@ -1,8 +1,7 @@
 import { Box, Button, ButtonGroup, Text, VStack } from '@chakra-ui/react';
 import { useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import books from '../data/books.json';
-import { readBooks, unreadBooks } from '../data/filters';
+import { allBooks, readBooks, unreadBooks } from '../data/filters';
 import genres from '../data/genres.json';
 import { TBook } from '../types';
 import CollapsibleShelf from './CollapsibleShelf';
@@ -34,7 +33,7 @@ export default function BookList({ filter }: BookListProps) {
         switch (filter) {
             case 'read': return readBooks();
             case 'unread': return unreadBooks();
-            default: return Object.values(books);
+            default: return allBooks();
         }
     };
 
@@ -77,6 +76,21 @@ export default function BookList({ filter }: BookListProps) {
                     });
                     return acc;
                 }, {} as Record<string, TBook[]>);
+            case 'platform':
+                return sorted.reduce((acc, book) => {
+                    if (book.platforms && book.platforms.length > 0) {
+                        book.platforms.forEach(platform => {
+                            if (!acc[platform]) acc[platform] = [];
+                            if (!acc[platform].includes(book)) {
+                                acc[platform].push(book);
+                            }
+                        });
+                    } else {
+                        if (!acc['No Platform']) acc['No Platform'] = [];
+                        acc['No Platform'].push(book);
+                    }
+                    return acc;
+                }, {} as Record<string, TBook[]>);
             default:
                 return { 'All Books': sorted };
         }
@@ -100,6 +114,7 @@ export default function BookList({ filter }: BookListProps) {
                     <Button colorScheme={groupBy === 'genre' ? 'blue' : 'gray'} onClick={() => updateParam('groupBy', 'genre')}>Genre</Button>
                     <Button colorScheme={groupBy === 'status' ? 'blue' : 'gray'} onClick={() => updateParam('groupBy', 'status')}>Status</Button>
                     <Button colorScheme={groupBy === 'author' ? 'blue' : 'gray'} onClick={() => updateParam('groupBy', 'author')}>Author</Button>
+                    <Button colorScheme={groupBy === 'platform' ? 'blue' : 'gray'} onClick={() => updateParam('groupBy', 'platform')}>Platform</Button>
                 </ButtonGroup>
 
                 <Text fontWeight="bold" mb={2}>Sort by:</Text>

@@ -1,5 +1,5 @@
 import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
-import { Box, Collapse, HStack, Heading, IconButton, StackDivider, Text, VStack, useDisclosure } from "@chakra-ui/react";
+import { Badge, Box, Collapse, Flex, HStack, Heading, IconButton, StackDivider, Text, VStack, Wrap, useDisclosure } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { TBook } from "../types";
 import CountBadge from "./CountBadge";
@@ -18,6 +18,17 @@ export default function CollapsibleShelf({ title, books, isOpen: externalIsOpen 
             externalIsOpen ? onOpen() : onClose();
         }
     }, [externalIsOpen, onOpen, onClose]);
+
+    const getPlatformColor = (platform: string) => {
+        switch(platform) {
+            case 'audible': return 'orange';
+            case 'kindle': return 'orange';
+            case 'chirp': return 'purple';
+            case 'audiobooks-com': return 'amber';
+            case 'libby': return 'cyan';
+            default: return 'gray';
+        }
+    };
 
     return (
         <Box
@@ -47,14 +58,27 @@ export default function CollapsibleShelf({ title, books, isOpen: externalIsOpen 
                     spacing={3}
                 >
                     {books.map((book) => (
-                        <HStack key={book.id} justify="space-between">
-                            <Box>
+                        <Flex key={book.id} justify="space-between">
+                            <Box flex="1">
                                 <Text fontWeight="bold">{book.title}</Text>
-                                <Text fontSize="sm" color="gray.600">
+                                <Text fontSize="sm">
                                     {book.author}
                                 </Text>
+                                {book.platforms && book.platforms.length > 0 && (
+                                    <Wrap mt={1} spacing={1}>
+                                        {book.platforms.map(platform => (
+                                            <Badge 
+                                                key={platform} 
+                                                colorScheme={getPlatformColor(platform)}
+                                                fontSize="xs"
+                                            >
+                                                {platform}
+                                            </Badge>
+                                        ))}
+                                    </Wrap>
+                                )}
                             </Box>
-                        </HStack>
+                        </Flex>
                     ))}
                 </VStack>
             </Collapse>

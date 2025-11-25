@@ -1,7 +1,7 @@
-import { TBook } from '../types'
-import bookList from './books.json'
+import { TBook } from '../types';
+import bookList from './books.json';
 
-const originalList = Object.values(bookList)
+const originalList = Object.values(bookList) as TBook[]
 
 // Define valid grouping options based on TBook fields that are suitable for grouping
 export type TGroupByOption = 'author' | 'genreIds' | 'series' | 'readByMe';
@@ -26,4 +26,8 @@ export function readBooks(groupBy?: TGroupByOption): TBook[] {
     }
     return filteredList
 
+}
+
+export function allBooks(): TBook[] {
+    return originalList
 }
