@@ -1,18 +1,42 @@
-import { Box, Button, ButtonGroup, Text, VStack } from '@chakra-ui/react';
+import { ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons';
+import { Box, Button, ButtonGroup, Collapse, HStack, IconButton, Text, VStack } from '@chakra-ui/react';
 import { useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { allBooks, readBooks, unreadBooks } from '../data/filters';
+import books from '../data/books.json';
+import { readBooks, unreadBooks } from '../data/filters';
 import genres from '../data/genres.json';
 import { TBook } from '../types';
 import CollapsibleShelf from './CollapsibleShelf';
 
 interface BookListProps {
-    filter: 'all' | 'read' | 'unread';
+    filter: 'all' | 'read' | 'unread' | 'unowned' | 'owned';
 }
+
+const FILTER_OPTIONS = [
+    { value: 'all', label: 'All' },
+    { value: 'read', label: 'Read' },
+    { value: 'unread', label: 'Unread' },
+    { value: 'unowned', label: 'Unowned' },
+    { value: 'owned', label: 'Owned' },
+] as const;
+
+const GROUP_OPTIONS = [
+    { value: 'none', label: 'None' },
+    { value: 'genre', label: 'Genre' },
+    { value: 'status', label: 'Status' },
+    { value: 'author', label: 'Author' },
+    { value: 'platform', label: 'Platform' },
+] as const;
+
+const SORT_OPTIONS = [
+    { value: 'title', label: 'Title' },
+    { value: 'author', label: 'Author' },
+] as const;
 
 export default function BookList({ filter }: BookListProps) {
     const [searchParams, setSearchParams] = useSearchParams();
     const navigate = useNavigate();
+    const [expandControls, setExpandControls] = useState(true);
     const [expandAll, setExpandAll] = useState(false);
 
     const groupBy = searchParams.get('groupBy') || 'none';
@@ -30,10 +54,18 @@ export default function BookList({ filter }: BookListProps) {
 
     // Filter books
     const getFilteredBooks = (): TBook[] => {
+        const allBooks = Object.values(books) as TBook[];
         switch (filter) {
-            case 'read': return readBooks();
-            case 'unread': return unreadBooks();
-            default: return allBooks();
+            case 'read':
+                return readBooks();
+            case 'unread':
+                return unreadBooks();
+            case 'unowned':
+                return allBooks.filter(book => !book.platforms || book.platforms.length === 0);
+            case 'owned':
+                return allBooks.filter(book => book.platforms && book.platforms.length > 0);
+            default:
+                return allBooks;
         }
     };
 
@@ -99,34 +131,74 @@ export default function BookList({ filter }: BookListProps) {
     const groupedBooks = getGroupedBooks();
 
     return (
-        <VStack spacing={6} align="stretch">
+        <VStack spacing={6} align="stretch" overflowY="scroll">
             <Box p={5} shadow="md" borderWidth="1px" borderRadius="md">
-                <Text fontWeight="bold" mb={2}>Filter:</Text>
-                <ButtonGroup size="sm" mb={4}>
-                    <Button colorScheme={filter === 'all' ? 'blue' : 'gray'} onClick={() => changeFilter('all')}>All</Button>
-                    <Button colorScheme={filter === 'read' ? 'blue' : 'gray'} onClick={() => changeFilter('read')}>Read</Button>
-                    <Button colorScheme={filter === 'unread' ? 'blue' : 'gray'} onClick={() => changeFilter('unread')}>Unread</Button>
-                </ButtonGroup>
+                <HStack justify="space-between" mb={expandControls ? 3 : 0}>
+                    <Text fontWeight="bold">Controls</Text>
+                    <IconButton
+                        aria-label={expandControls ? "Hide controls" : "Show controls"}
+                        icon={expandControls ? <ChevronUpIcon /> : <ChevronDownIcon />}
+                        onClick={() => setExpandControls(!expandControls)}
+                        variant="ghost"
+                        size="sm"
+                    />
+                </HStack>
 
-                <Text fontWeight="bold" mb={2}>Group by:</Text>
-                <ButtonGroup size="sm" mb={4}>
-                    <Button colorScheme={groupBy === 'none' ? 'blue' : 'gray'} onClick={() => updateParam('groupBy', 'none')}>None</Button>
-                    <Button colorScheme={groupBy === 'genre' ? 'blue' : 'gray'} onClick={() => updateParam('groupBy', 'genre')}>Genre</Button>
-                    <Button colorScheme={groupBy === 'status' ? 'blue' : 'gray'} onClick={() => updateParam('groupBy', 'status')}>Status</Button>
-                    <Button colorScheme={groupBy === 'author' ? 'blue' : 'gray'} onClick={() => updateParam('groupBy', 'author')}>Author</Button>
-                    <Button colorScheme={groupBy === 'platform' ? 'blue' : 'gray'} onClick={() => updateParam('groupBy', 'platform')}>Platform</Button>
-                </ButtonGroup>
+                <Collapse in={expandControls} animateOpacity>
+                    <VStack align="stretch" spacing={4}>
+                        <Box>
+                            <Text fontWeight="bold" mb={2}>Filter:</Text>
+                            <ButtonGroup size="sm">
+                                {FILTER_OPTIONS.map(option => (
+                                    <Button
+                                        key={option.value}
+                                        colorScheme={filter === option.value ? 'blue' : 'gray'}
+                                        onClick={() => changeFilter(option.value)}
+                                    >
+                                        {option.label}
+                                    </Button>
+                                ))}
+                            </ButtonGroup>
+                        </Box>
 
-                <Text fontWeight="bold" mb={2}>Sort by:</Text>
-                <ButtonGroup size="sm" mb={4}>
-                    <Button colorScheme={sortBy === 'title' ? 'blue' : 'gray'} onClick={() => updateParam('sortBy', 'title')}>Title</Button>
-                    <Button colorScheme={sortBy === 'author' ? 'blue' : 'gray'} onClick={() => updateParam('sortBy', 'author')}>Author</Button>
-                </ButtonGroup>
-                <Text fontWeight="bold" mb={2}>Expand:</Text>
-                <ButtonGroup size="sm" mb={4}>
+                        <Box>
+                            <Text fontWeight="bold" mb={2}>Group by:</Text>
+                            <ButtonGroup size="sm">
+                                {GROUP_OPTIONS.map(option => (
+                                    <Button
+                                        key={option.value}
+                                        colorScheme={groupBy === option.value ? 'blue' : 'gray'}
+                                        onClick={() => updateParam('groupBy', option.value)}
+                                    >
+                                        {option.label}
+                                    </Button>
+                                ))}
+                            </ButtonGroup>
+                        </Box>
+
+                        <Box>
+                            <Text fontWeight="bold" mb={2}>Sort by:</Text>
+                            <ButtonGroup size="sm">
+                                {SORT_OPTIONS.map(option => (
+                                    <Button
+                                        key={option.value}
+                                        colorScheme={sortBy === option.value ? 'blue' : 'gray'}
+                                        onClick={() => updateParam('sortBy', option.value)}
+                                    >
+                                        {option.label}
+                                    </Button>
+                                ))}
+                            </ButtonGroup>
+                        </Box>
+
+                    </VStack>
+                </Collapse>
+            </Box>
+            <Box  p={5} shadow="md" borderWidth="1px" borderRadius="md">
+                <HStack>
                     <Button size="sm" onClick={() => setExpandAll(true)}>Expand All</Button>
                     <Button size="sm" onClick={() => setExpandAll(false)}>Collapse All</Button>
-                </ButtonGroup>
+                </HStack>
             </Box>
 
             {Object.entries(groupedBooks).map(([title, bookList]) => (
