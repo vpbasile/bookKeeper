@@ -1,7 +1,9 @@
-import { Routes, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import CollapsibleShelf from "./components/CollapsibleShelf";
+import Home from "./components/Homepage";
 import Layout from "./components/layout";
-import Home from "./Homepage";
-import About from "./About";
+import books from "./data/books.json";
+import { readBooks, unreadBooks } from "./data/filters";
 
 function App() {
 
@@ -13,7 +15,10 @@ function App() {
     < Routes >
       <Route path='/' element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
+        <Route path="read" element={<CollapsibleShelf title="Books I've Read" books={readBooks()} />} />
+        <Route path="unread" element={<CollapsibleShelf title="Books I Want to Read" books={unreadBooks()} />} />
+        <Route path="all" element={<CollapsibleShelf title="All Books" books={Object.values(books)} />} />
+        {/* <Route path="about" element={<About />} /> */}
       </Route>
     </Routes >
   )

@@ -1,0 +1,160 @@
+{
+  "book_0001": {
+    "id": "book_0001",
+    "title": "Exhalation",
+    "author": "Ted Chiang",
+    "genreIds": ["sf", "shorts", "speculative"],
+    "readByMe": false
+  },
+  "book_0002": {
+    "id": "book_0002",
+    "title": "Annihilation",
+    "author": "Jeff VanderMeer",
+    "genreIds": ["sf", "weird", "speculative"],
+    "readByMe": false
+  },
+  "book_0003": {
+    "id": "book_0003",
+    "title": "Rosewater",
+    "author": "Tade Thompson",
+    "genreIds": ["sf", "africanfuturism-afrofuturism"],
+    "readByMe": false
+  },
+  "book_0004": {
+    "id": "book_0004",
+    "title": "The Traitor Baru Cormorant",
+    "author": "Seth Dickinson",
+    "genreIds": ["fantasy", "resistance"],
+    "readByMe": false
+  },
+  "book_0005": {
+    "id": "book_0005",
+    "title": "Ancillary Justice",
+    "author": "Ann Leckie",
+    "genreIds": ["sf", "resistance", "speculative"],
+    "readByMe": false
+  },
+  "book_0006": {
+    "id": "book_0006",
+    "title": "The Poppy War",
+    "author": "R.F. Kuang",
+    "genreIds": ["fantasy", "grimdark", "resistance", "military"],
+    "readByMe": false
+  },
+  "book_0007": {
+    "id": "book_0007",
+    "title": "Gideon the Ninth",
+    "author": "Tamsyn Muir",
+    "genreIds": ["fantasy", "dark-academia", "lgbtq", "weird"],
+    "readByMe": false
+  },
+  "book_0008": {
+    "id": "book_0008",
+    "title": "All Systems Red",
+    "author": "Martha Wells",
+    "genreIds": ["sf", "speculative"],
+    "readByMe": false
+  },
+  "book_0009": {
+    "id": "book_0009",
+    "title": "Black Leopard, Red Wolf",
+    "author": "Marlon James",
+    "genreIds": ["fantasy", "grimdark", "africanfuturism-afrofuturism"],
+    "readByMe": false
+  },
+  "book_0010": {
+    "id": "book_0010",
+    "title": "Ninth House",
+    "author": "Leigh Bardugo",
+    "genreIds": ["fantasy", "dark-academia", "weird"],
+    "readByMe": false
+  },
+  "book_0011": {
+    "id": "book_0011",
+    "title": "The Dispossessed",
+    "author": "Ursula K. Le Guin",
+    "genreIds": ["sf", "speculative", "political"],
+    "readByMe": false
+  },
+  "book_0012": {
+    "id": "book_0012",
+    "title": "Dawn",
+    "author": "Octavia Butler",
+    "genreIds": ["sf", "speculative"],
+    "readByMe": false
+  },
+  "book_0013": {
+    "id": "book_0013",
+    "title": "The Three-Body Problem",
+    "author": "Liu Cixin",
+    "genreIds": ["sf", "speculative"],
+    "readByMe": false
+  },
+  "book_0014": {
+    "id": "book_0014",
+    "title": "Elantris",
+    "author": "Brandon Sanderson",
+    "genreIds": ["fantasy"],
+    "readByMe": false
+  },
+  "book_0015": {
+    "id": "book_0015",
+    "title": "Skyward",
+    "author": "Brandon Sanderson",
+    "genreIds": ["sf", "speculative"],
+    "readByMe": false
+  },
+  "book_0016": {
+    "id": "book_0016",
+    "title": "The Will of the Many",
+    "author": "James Islington",
+    "genreIds": ["fantasy", "political"],
+    "readByMe": false
+  },
+  "book_0017": {
+    "id": "book_0017",
+    "title": "Sixteen Ways to Defend a Walled City",
+    "author": "K.J. Parker",
+    "genreIds": ["fantasy", "political"],
+    "readByMe": false
+  },
+  "book_0018": {
+    "id": "book_0018",
+    "title": "Small Gods",
+    "author": "Terry Pratchett",
+    "genreIds": ["fantasy", "speculative"],
+    "readByMe": false
+  },
+  "book_0019": {
+    "id": "book_0019",
+    "title": "Guards! Guards!",
+    "author": "Terry Pratchett",
+    "genreIds": ["fantasy", "speculative"],
+    "series": "Discworld",
+    "readByMe": false
+  },
+  "book_0020": {
+    "id": "book_0020",
+    "title": "Mort",
+    "author": "Terry Pratchett",
+    "genreIds": ["fantasy", "speculative"],
+    "series": "Discworld",
+    "readByMe": false
+  },
+   "book_0021": {
+    "id": "book_0021",
+    "title": "Babel",
+    "author": "R.F. Kuang",
+    "genreIds": ["resistance", "historical-fiction"],
+    "series": null,
+    "readByMe": true
+  },
+  "book_0022": {
+    "id": "book_0022",
+    "title": "Project Hail Mary",
+    "author": "Andy Weir",
+    "genreIds": ["sf", "speculative"],
+    "series": null,
+    "readByMe": true
+  }
+}

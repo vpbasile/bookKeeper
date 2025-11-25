@@ -1,0 +1,72 @@
+[
+  {
+    "id": "sf",
+    "name": "Science Fiction",
+    "category": "fiction",
+    "description": "Speculative stories involving science, technology, or future worlds."
+  },
+  {
+    "id": "fantasy",
+    "name": "Fantasy",
+    "category": "fiction",
+    "description": "Stories involving magic, supernatural events, or imaginary worlds."
+  },
+  {
+    "id": "speculative",
+    "name": "Speculative",
+    "category": "fiction",
+    "description": "Explores 'what if' scenarios, philosophical or conceptual."
+  },
+  {
+    "id": "weird",
+    "name": "Weird Fiction",
+    "category": "fiction",
+    "description": "Blends horror, fantasy, and the surreal."
+  },
+  {
+    "id": "shorts",
+    "name": "Short Stories",
+    "category": "form",
+    "description": "Collections of standalone short fiction pieces."
+  },
+  {
+    "id": "resistance",
+    "name": "Resistance / Anti-Imperial",
+    "category": "theme",
+    "description": "Stories focused on rebellion, colonialism, or resistance to empire."
+  },
+  {
+    "id": "dark-academia",
+    "name": "Dark Academia",
+    "category": "theme",
+    "description": "Elite schools, occult knowledge, and academic obsession."
+  },
+  {
+    "id": "africanfuturism-afrofuturism",
+    "name": "Africanfuturism and Afrofuturism",
+    "category": "cultural",
+    "description": "Speculative fiction rooted in African and African diaspora experiences, centered on Africa and African perspectives."
+  },
+  {
+    "id": "military",
+    "name": "Military / War",
+    "category": "theme",
+    "description": "Focuses on strategy, conflict, and warfare."
+  },
+  {
+    "id": "grimdark",
+    "name": "Grimdark",
+    "category": "theme",
+    "description": "Violent, morally ambiguous, and darkly realistic fantasy."
+  },
+  {
+    "id": "political",
+    "name": "Political",
+    "description": ""
+  },
+  {
+    "id": "historical-fiction",
+    "name": "Historical Fiction",
+    "description": ""
+  }
+]
