@@ -121,8 +121,8 @@ export default function BookList({ filter }: BookListProps) {
                             }
                         });
                     } else {
-                        if (!acc['No Platform']) acc['No Platform'] = [];
-                        acc['No Platform'].push(book);
+                        if (!acc['Not Owned']) acc['Not Owned'] = [];
+                        acc['Not Owned'].push(book);
                     }
                     return acc;
                 }, {} as Record<string, TBook[]>);

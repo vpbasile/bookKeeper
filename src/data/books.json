@@ -92,7 +92,7 @@
     "author": "Liu Cixin",
     "genreIds": ["sf", "speculative"],
     "readByMe": false,
-    "platformIds": ["audiobooks-com"]
+    "platformIds": ["audiobook"]
   },
   "book_0014": {
     "id": "book_0014",
@@ -323,7 +323,7 @@
     "genreIds": ["fantasy"],
     "series": "The Stormlight Archive",
     "readByMe": true,
-    "platformIds": ["audible"]
+    "platformIds": ["audible","hardback"]
   },
   "book_0041": {
     "id": "book_0041",
@@ -432,5 +432,96 @@
     "series": null,
     "readByMe": true,
     "platformIds": ["chirp"]
+  },
+  "book_0053": {
+    "id": "book_0053",
+    "title": "The Way of Kings",
+    "author": "Brandon Sanderson",
+    "genreIds": ["fantasy"],
+    "series": "The Stormlight Archive",
+    "readByMe": true,
+    "platformIds": ["paperback", "audible"]
+  },
+  "book_0054": {
+    "id": "book_0054",
+    "title": "Words of Radiance",
+    "author": "Brandon Sanderson",
+    "genreIds": ["fantasy"],
+    "series": "The Stormlight Archive",
+    "readByMe": true,
+    "platformIds": ["paperback", "audible"]
+  },
+  "book_0055": {
+    "id": "book_0055",
+    "title": "Oathbringer",
+    "author": "Brandon Sanderson",
+    "genreIds": ["fantasy"],
+    "series": "The Stormlight Archive",
+    "readByMe": true,
+    "platformIds": ["paperback", "audible"]
+  },
+  "book_0056": {
+    "id": "book_0056",
+    "title": "Rhythm of War",
+    "author": "Brandon Sanderson",
+    "genreIds": ["fantasy"],
+    "series": "The Stormlight Archive",
+    "readByMe": true,
+    "platformIds": ["audiobooks-com"]
+  },
+  "book_0057": {
+    "id": "book_0057",
+    "title": "Wind and Truth",
+    "author": "Brandon Sanderson",
+    "genreIds": ["fantasy"],
+    "series": "The Stormlight Archive",
+    "readByMe": true,
+    "platformIds": ["audible", "kindle"]
+  },
+  "book_0058": {
+    "id": "book_0058",
+    "title": "Alien Clay",
+    "author": "Adrian Tchaikovsky",
+    "genreIds": ["sf", "speculative"],
+    "readByMe": false
+  },
+  "book_0059": {
+    "id": "book_0059",
+    "title": "Mushroom Blues",
+    "author": "Adrian M. Gibson",
+    "genreIds": ["sf", "speculative"],
+    "series": "The Hofmann Report",
+    "readByMe": false
+  },
+  "book_0060": {
+    "id": "book_0060",
+    "title": "Sabriel",
+    "author": "Garth Nix",
+    "genreIds": ["fantasy"],
+    "series": "Old Kingdom",
+    "readByMe": false
+  },
+  "book_0061": {
+    "id": "book_0061",
+    "title": "Children of Time",
+    "author": "Adrian Tchaikovsky",
+    "genreIds": ["sf", "speculative"],
+    "series": "Children of Time",
+    "readByMe": false
+  },
+  "book_0062": {
+    "id": "book_0062",
+    "title": "Service Model",
+    "author": "Adrian Tchaikovsky",
+    "genreIds": ["sf", "speculative"],
+    "readByMe": false
+  },
+  "book_0063": {
+    "id": "book_0063",
+    "title": "Jade City",
+    "author": "Fonda Lee",
+    "genreIds": ["fantasy"],
+    "series": "Green Bone Saga",
+    "readByMe": false
   }
 }

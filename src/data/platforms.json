@@ -40,5 +40,11 @@
     "name": "Hardback",
     "type": "physical",
     "description": "Physical hardcover book"
+  },
+  {
+    "id":"audiobook",
+    "name":"Audio Book",
+    "type":"audiobook",
+    "description": "A local copy of the audiobook"
   }
 ]
