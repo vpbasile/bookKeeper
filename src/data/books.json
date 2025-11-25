@@ -190,7 +190,8 @@
     "author": "Andy Weir",
     "genreIds": ["sf", "speculative"],
     "series": null,
-    "readByMe": true
+    "readByMe": true,
+    "platforms": ["audible"]
   },
   "book_0027": {
     "id": "book_0027",
@@ -198,7 +199,8 @@
     "author": "J.K. Rowling",
     "genreIds": ["contemporary-fiction"],
     "series": null,
-    "readByMe": true
+    "readByMe": true,
+    "platforms": ["audible"]
   },
   "book_0028": {
     "id": "book_0028",
@@ -206,7 +208,8 @@
     "author": "Amy Poehler",
     "genreIds": ["biography", "memoir"],
     "series": null,
-    "readByMe": true
+    "readByMe": true,
+    "platforms": ["audible"]
   },
   "book_0029": {
     "id": "book_0029",
@@ -214,7 +217,8 @@
     "author": "Tina Fey",
     "genreIds": ["biography", "memoir"],
     "series": null,
-    "readByMe": true
+    "readByMe": true,
+    "platforms": ["audible"]
   },
   "book_0030": {
     "id": "book_0030",
@@ -230,7 +234,8 @@
     "author": "Michael Pollan",
     "genreIds": ["nonfiction"],
     "series": null,
-    "readByMe": true
+    "readByMe": true,
+    "platforms": ["audible"]
   },
   "book_0032": {
     "id": "book_0032",
@@ -246,7 +251,8 @@
     "author": "Nick Offerman",
     "genreIds": ["nonfiction", "memoir"],
     "series": null,
-    "readByMe": true
+    "readByMe": true,
+    "platforms": ["audible"]
   },
   "book_0034": {
     "id": "book_0034",
@@ -254,6 +260,169 @@
     "author": "Adam Savage",
     "genreIds": ["nonfiction"],
     "series": null,
-    "readByMe": true
+    "readByMe": true,
+    "platforms": ["audible"]
+  },
+  "book_0035": {
+    "id": "book_0035",
+    "title": "Dungeon Crawler Carl",
+    "author": "Matt Dinniman",
+    "genreIds": ["sf", "fantasy"],
+    "series": "Dungeon Crawler Carl",
+    "readByMe": false,
+    "platforms": ["audible"]
+  },
+  "book_0036": {
+    "id": "book_0036",
+    "title": "A Wizard of Earthsea",
+    "author": "Ursula K. Le Guin",
+    "genreIds": ["fantasy", "speculative"],
+    "series": "Earthsea",
+    "readByMe": false,
+    "platforms": ["audible"]
+  },
+  "book_0037": {
+    "id": "book_0037",
+    "title": "The Kaiju Preservation Society",
+    "author": "John Scalzi",
+    "genreIds": ["sf", "speculative"],
+    "series": null,
+    "readByMe": false,
+    "platforms": ["audible"]
+  },
+  "book_0038": {
+    "id": "book_0038",
+    "title": "Fahrenheit 451",
+    "author": "Ray Bradbury",
+    "genreIds": ["sf", "speculative"],
+    "series": null,
+    "readByMe": false,
+    "platforms": ["audible"]
+  },
+  "book_0039": {
+    "id": "book_0039",
+    "title": "The Curious Incident of the Dog in the Night-Time",
+    "author": "Mark Haddon",
+    "genreIds": ["contemporary-fiction"],
+    "series": null,
+    "readByMe": false,
+    "platforms": ["audible"]
+  },
+  "book_0040": {
+    "id": "book_0040",
+    "title": "Dawnshard",
+    "author": "Brandon Sanderson",
+    "genreIds": ["fantasy"],
+    "series": "The Stormlight Archive",
+    "readByMe": false,
+    "platforms": ["audible"]
+  },
+  "book_0041": {
+    "id": "book_0041",
+    "title": "Isles of the Emberdark",
+    "author": "Various",
+    "genreIds": ["fantasy"],
+    "series": null,
+    "readByMe": false,
+    "platforms": ["audible"]
+  },
+  "book_0042": {
+    "id": "book_0042",
+    "title": "Fuzzy Nation",
+    "author": "John Scalzi",
+    "genreIds": ["sf", "speculative"],
+    "series": null,
+    "readByMe": false,
+    "platforms": ["audible"]
+  },
+  "book_0043": {
+    "id": "book_0043",
+    "title": "When the Moon Hits Your Eye",
+    "author": "John Scalzi",
+    "genreIds": ["sf", "speculative"],
+    "series": null,
+    "readByMe": false,
+    "platforms": ["audible"]
+  },
+  "book_0044": {
+    "id": "book_0044",
+    "title": "The Martian",
+    "author": "Andy Weir",
+    "genreIds": ["sf", "speculative"],
+    "series": null,
+    "readByMe": false,
+    "platforms": ["audible"]
+  },
+  "book_0045": {
+    "id": "book_0045",
+    "title": "Daughter of the Moon Goddess",
+    "author": "Sue Lynn Tan",
+    "genreIds": ["fantasy"],
+    "series": "The Celestial Kingdom",
+    "readByMe": false,
+    "platforms": ["chirp"]
+  },
+  "book_0046": {
+    "id": "book_0046",
+    "title": "The Long Way to a Small, Angry Planet",
+    "author": "Becky Chambers",
+    "genreIds": ["sf", "speculative"],
+    "series": "Wayfarers",
+    "readByMe": false,
+    "platforms": ["chirp"]
+  },
+  "book_0047": {
+    "id": "book_0047",
+    "title": "A Psalm for the Wild-Built",
+    "author": "Becky Chambers",
+    "genreIds": ["sf", "speculative"],
+    "series": "Monk & Robot",
+    "readByMe": false,
+    "platforms": ["chirp"]
+  },
+  "book_0048": {
+    "id": "book_0048",
+    "title": "The Ocean at the End of the Lane",
+    "author": "Neil Gaiman",
+    "genreIds": ["fantasy", "speculative"],
+    "series": null,
+    "readByMe": false,
+    "platforms": ["chirp"]
+  },
+  "book_0049": {
+    "id": "book_0049",
+    "title": "Yumi and the Nightmare Painter",
+    "author": "Brandon Sanderson",
+    "genreIds": ["fantasy"],
+    "series": null,
+    "readByMe": false,
+    "platforms": ["chirp"]
+  },
+  "book_0050": {
+    "id": "book_0050",
+    "title": "The Sunlit Man",
+    "author": "Brandon Sanderson",
+    "genreIds": ["fantasy", "sf"],
+    "series": null,
+    "readByMe": false,
+    "platforms": ["chirp"]
+  },
+  "book_0051": {
+    "id": "book_0051",
+    "title": "Tress of the Emerald Sea",
+    "author": "Brandon Sanderson",
+    "genreIds": ["fantasy"],
+    "series": null,
+    "readByMe": false,
+    "platforms": ["chirp"]
+  },
+  "book_0052": {
+    "id": "book_0052",
+    "title": "Warbreaker",
+    "author": "Brandon Sanderson",
+    "genreIds": ["fantasy"],
+    "series": null,
+    "readByMe": false,
+    "platforms": ["chirp"]
   }
 }
