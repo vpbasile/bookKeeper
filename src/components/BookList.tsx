@@ -1,9 +1,10 @@
-import { useSearchParams, useNavigate } from 'react-router-dom';
-import { Button, ButtonGroup, VStack, Text, Box } from '@chakra-ui/react';
-import CollapsibleShelf from './CollapsibleShelf';
+import { Box, Button, ButtonGroup, Text, VStack } from '@chakra-ui/react';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import books from '../data/books.json';
 import { readBooks, unreadBooks } from '../data/filters';
+import genres from '../data/genres.json';
 import { TBook } from '../types';
+import CollapsibleShelf from './CollapsibleShelf';
 
 interface BookListProps {
     filter: 'all' | 'read' | 'unread';
@@ -12,7 +13,7 @@ interface BookListProps {
 export default function BookList({ filter }: BookListProps) {
     const [searchParams, setSearchParams] = useSearchParams();
     const navigate = useNavigate();
-    
+
     const groupBy = searchParams.get('groupBy') || 'none';
     const sortBy = searchParams.get('sortBy') || 'title';
 
@@ -23,13 +24,12 @@ export default function BookList({ filter }: BookListProps) {
     };
 
     const changeFilter = (newFilter: string) => {
-        // Preserve existing query params when changing route
         navigate(`/${newFilter}?${searchParams.toString()}`);
     };
 
     // Filter books
     const getFilteredBooks = (): TBook[] => {
-        switch(filter) {
+        switch (filter) {
             case 'read': return readBooks();
             case 'unread': return unreadBooks();
             default: return Object.values(books);
@@ -51,7 +51,7 @@ export default function BookList({ filter }: BookListProps) {
         const filtered = getFilteredBooks();
         const sorted = sortBooks(filtered);
 
-        switch(groupBy) {
+        switch (groupBy) {
             case 'author':
                 return sorted.reduce((acc, book) => {
                     if (!acc[book.author]) acc[book.author] = [];
@@ -63,6 +63,18 @@ export default function BookList({ filter }: BookListProps) {
                     'Read': sorted.filter(b => b.readByMe),
                     'Unread': sorted.filter(b => !b.readByMe)
                 };
+            case 'genre':
+                return sorted.reduce((acc, book) => {
+                    book.genreIds.forEach(genreId => {
+                        const genre = genres.find(g => g.id === genreId);
+                        const genreName = genre?.name || genreId;
+                        if (!acc[genreName]) acc[genreName] = [];
+                        if (!acc[genreName].includes(book)) {
+                            acc[genreName].push(book);
+                        }
+                    });
+                    return acc;
+                }, {} as Record<string, TBook[]>);
             default:
                 return { 'All Books': sorted };
         }
@@ -80,17 +92,18 @@ export default function BookList({ filter }: BookListProps) {
                     <Button colorScheme={filter === 'unread' ? 'blue' : 'gray'} onClick={() => changeFilter('unread')}>Unread</Button>
                 </ButtonGroup>
 
+                <Text fontWeight="bold" mb={2}>Group by:</Text>
+                <ButtonGroup size="sm">
+                    <Button colorScheme={groupBy === 'none' ? 'blue' : 'gray'} onClick={() => updateParam('groupBy', 'none')}>None</Button>
+                    <Button colorScheme={groupBy === 'genre' ? 'blue' : 'gray'} onClick={() => updateParam('groupBy', 'genre')}>Genre</Button>
+                    <Button colorScheme={groupBy === 'status' ? 'blue' : 'gray'} onClick={() => updateParam('groupBy', 'status')}>Status</Button>
+                    <Button colorScheme={groupBy === 'author' ? 'blue' : 'gray'} onClick={() => updateParam('groupBy', 'author')}>Author</Button>
+                </ButtonGroup>
+
                 <Text fontWeight="bold" mb={2}>Sort by:</Text>
                 <ButtonGroup size="sm" mb={4}>
                     <Button colorScheme={sortBy === 'title' ? 'blue' : 'gray'} onClick={() => updateParam('sortBy', 'title')}>Title</Button>
                     <Button colorScheme={sortBy === 'author' ? 'blue' : 'gray'} onClick={() => updateParam('sortBy', 'author')}>Author</Button>
-                </ButtonGroup>
-
-                <Text fontWeight="bold" mb={2}>Group by:</Text>
-                <ButtonGroup size="sm">
-                    <Button colorScheme={groupBy === 'none' ? 'blue' : 'gray'} onClick={() => updateParam('groupBy', 'none')}>None</Button>
-                    <Button colorScheme={groupBy === 'author' ? 'blue' : 'gray'} onClick={() => updateParam('groupBy', 'author')}>Author</Button>
-                    <Button colorScheme={groupBy === 'status' ? 'blue' : 'gray'} onClick={() => updateParam('groupBy', 'status')}>Status</Button>
                 </ButtonGroup>
             </Box>
 
