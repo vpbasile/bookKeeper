@@ -48,7 +48,7 @@ export default function CollapsibleShelf({ title, books, isOpen: externalIsOpen 
                     divider={<StackDivider borderColor="gray.200" />}
                     spacing={3}
                 >
-                    {books.map((book) => <DisplayBookInfo book={book} />)}
+                    {books.map((book) => <DisplayBookInfo key={book.id} book={book} />)}
                 </VStack>
             </Collapse>
         </Box>
