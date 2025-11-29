@@ -1,43 +1,61 @@
 import { Badge, Grid, GridItem, Text, Wrap } from '@chakra-ui/react';
-import { getGenreName, getPlatformName } from '../data/platforms';
+import { getGenreName, getPlatformColor, getPlatformName } from '../data/platforms';
 import { TBook } from '../types';
+
 export default function DisplayBookInfo({ book }: { book: TBook }) {
     return <Grid
-
         gap={3}
         alignItems="start"
     >
         <GridItem>
+            <Text fontSize="xs" color="gray.500" mb={1} display={{ base: "block", md: "none" }}>
+                Book
+            </Text>
             <Text fontWeight="bold" fontSize={{ base: "md", md: "sm" }}>
                 {book.title}
             </Text>
             <Text fontSize="sm" color="gray.600">
-                {book.author}
+                by {book.author}
             </Text>
             {book.series && (
                 <Text fontSize="xs" color="gray.500" fontStyle="italic">
-                    {book.series}
+                    Series: {book.series}
                 </Text>
             )}
         </GridItem>
 
         <GridItem>
             <Text fontSize="xs" color="gray.500" mb={1} display={{ base: "block", md: "none" }}>
-                Platforms
+                Platforms:
             </Text>
             <Wrap spacing={1}>
+                <Badge
+                    id={`${book.id}-read-badge`}
+                    colorScheme={book.readByMe ? "green" : "gray"}
+                    fontSize="xs"
+                >
+                    {book.readByMe ? "Read" : "Unread"}
+                </Badge>
                 {book.platformIds && book.platformIds.length > 0 ? (
                     book.platformIds.map(platformId => (
                         <Badge
                             key={platformId}
                             id={`${book.id}-${platformId}-badge`}
+                            colorScheme={getPlatformColor(platformId)}
                             fontSize="xs"
                         >
-                            {getPlatformName(platformId)}
+                            Platform: {getPlatformName(platformId)}
                         </Badge>
                     ))
                 ) : (
-                    <Text fontSize="xs" color="gray.400">—</Text>
+                    <Badge
+                        // key={platformId}
+                        id={`${book.id}-unowned-badge`}
+                        colorScheme={'gray'}
+                        fontSize="xs"
+                    >
+                        Not owned
+                    </Badge>
                 )}
             </Wrap>
         </GridItem>
