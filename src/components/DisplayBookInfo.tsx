@@ -1,10 +1,9 @@
 import { Badge, Grid, GridItem, Text, Wrap } from '@chakra-ui/react';
-import { getGenreName, getPlatformColor, getPlatformName } from '../data/platforms';
+import { getGenreName, getPlatformName } from '../data/platforms';
 import { TBook } from '../types';
 export default function DisplayBookInfo({ book }: { book: TBook }) {
     return <Grid
-        key={book.id}
-        templateColumns={{ base: "1fr", md: "2fr 1fr 2fr" }}
+
         gap={3}
         alignItems="start"
     >
@@ -31,8 +30,7 @@ export default function DisplayBookInfo({ book }: { book: TBook }) {
                     book.platformIds.map(platformId => (
                         <Badge
                             key={platformId}
-                            id={`${platformId}-badge`}
-                            colorScheme={getPlatformColor(platformId)}
+                            id={`${book.id}-${platformId}-badge`}
                             fontSize="xs"
                         >
                             {getPlatformName(platformId)}
