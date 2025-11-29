@@ -1,3 +1,7 @@
-# ZZZ React + TypeScript + Vite + ChakraUI
+# BookKeeper
 
-A blank project with all of that stuff
+An application to keep track of stories.
+
+Built with React, Vite, and Chakra UI.
+
+react-router-dom for routing

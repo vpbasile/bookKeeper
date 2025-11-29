@@ -1,21 +1,20 @@
-import { Routes, Route } from "react-router-dom";
-import Layout from "./components/layout";
-import Home from "./Homepage";
-import About from "./About";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import BookList from "./components/DisplayBookList";
+import Layout from "./components/Layout";
 
 function App() {
-
   return (
-    // {/* Routes nest inside one another. Nested route paths build upon
-    //         parent route paths, and nested route elements render inside
-    //         parent route elements. See the note about <Outlet> below. */}
-
-    < Routes >
-      <Route path='/' element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
-      </Route>
-    </Routes >
+    <BrowserRouter basename="/bookKeeper">
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route index element={<BookList filter="all" />} />
+          <Route path="all" element={<BookList filter="all" />} />
+          <Route path="read" element={<BookList filter="read" />} />
+          <Route path="unread" element={<BookList filter="unread" />} />
+          <Route path="unowned" element={<BookList filter="unowned" />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
