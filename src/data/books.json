@@ -1,0 +1,622 @@
+{
+  "book_0001": {
+    "id": "book_0001",
+    "title": "Exhalation",
+    "author": "Ted Chiang",
+    "genreIds": ["sf", "shorts", "speculative"],
+    "readByMe": true,
+    "platformIds": ["kindle"]
+  },
+  "book_0002": {
+    "id": "book_0002",
+    "title": "Annihilation",
+    "author": "Jeff VanderMeer",
+    "genreIds": ["sf", "weird", "speculative"],
+    "readByMe": false
+  },
+  "book_0003": {
+    "id": "book_0003",
+    "title": "Rosewater",
+    "author": "Tade Thompson",
+    "genreIds": ["sf", "africanfuturism-afrofuturism"],
+    "readByMe": false
+  },
+  "book_0004": {
+    "id": "book_0004",
+    "title": "The Traitor Baru Cormorant",
+    "author": "Seth Dickinson",
+    "genreIds": ["fantasy", "resistance"],
+    "readByMe": false
+  },
+  "book_0005": {
+    "id": "book_0005",
+    "title": "Ancillary Justice",
+    "author": "Ann Leckie",
+    "genreIds": ["sf", "resistance", "speculative"],
+    "readByMe": false
+  },
+  "book_0006": {
+    "id": "book_0006",
+    "title": "The Poppy War",
+    "author": "R.F. Kuang",
+    "genreIds": ["fantasy", "grimdark", "resistance", "military"],
+    "readByMe": false
+  },
+  "book_0007": {
+    "id": "book_0007",
+    "title": "Gideon the Ninth",
+    "author": "Tamsyn Muir",
+    "genreIds": ["fantasy", "dark-academia", "lgbtq", "weird"],
+    "readByMe": false
+  },
+  "book_0008": {
+    "id": "book_0008",
+    "title": "All Systems Red",
+    "author": "Martha Wells",
+    "genreIds": ["sf", "speculative"],
+    "readByMe": false,
+    "series": "Murderbot"
+  },
+  "book_0009": {
+    "id": "book_0009",
+    "title": "Black Leopard, Red Wolf",
+    "author": "Marlon James",
+    "genreIds": ["fantasy", "grimdark", "africanfuturism-afrofuturism"],
+    "readByMe": false
+  },
+  "book_0010": {
+    "id": "book_0010",
+    "title": "Ninth House",
+    "author": "Leigh Bardugo",
+    "genreIds": ["fantasy", "dark-academia", "weird"],
+    "readByMe": false
+  },
+  "book_0011": {
+    "id": "book_0011",
+    "title": "The Dispossessed",
+    "author": "Ursula K. Le Guin",
+    "genreIds": ["sf", "speculative", "political"],
+    "readByMe": false
+  },
+  "book_0012": {
+    "id": "book_0012",
+    "title": "Dawn",
+    "author": "Octavia Butler",
+    "genreIds": ["sf", "speculative"],
+    "readByMe": false,
+    "platformIds": ["audible"]
+  },
+  "book_0013": {
+    "id": "book_0013",
+    "title": "The Three-Body Problem",
+    "author": "Liu Cixin",
+    "genreIds": ["sf", "speculative"],
+    "readByMe": false,
+    "platformIds": ["audiobook"]
+  },
+  "book_0014": {
+    "id": "book_0014",
+    "title": "Elantris",
+    "author": "Brandon Sanderson",
+    "genreIds": ["fantasy"],
+    "readByMe": false
+  },
+  "book_0015": {
+    "id": "book_0015",
+    "title": "Skyward",
+    "author": "Brandon Sanderson",
+    "genreIds": ["sf", "speculative"],
+    "readByMe": false
+  },
+  "book_0016": {
+    "id": "book_0016",
+    "title": "The Will of the Many",
+    "author": "James Islington",
+    "genreIds": ["fantasy", "political"],
+    "readByMe": false
+  },
+  "book_0017": {
+    "id": "book_0017",
+    "title": "Sixteen Ways to Defend a Walled City",
+    "author": "K.J. Parker",
+    "genreIds": ["fantasy", "political"],
+    "readByMe": false
+  },
+  "book_0018": {
+    "id": "book_0018",
+    "title": "Small Gods",
+    "author": "Terry Pratchett",
+    "genreIds": ["fantasy", "speculative"],
+    "readByMe": false
+  },
+  "book_0019": {
+    "id": "book_0019",
+    "title": "Guards! Guards!",
+    "author": "Terry Pratchett",
+    "genreIds": ["fantasy", "speculative"],
+    "series": "Discworld",
+    "readByMe": false
+  },
+  "book_0020": {
+    "id": "book_0020",
+    "title": "Mort",
+    "author": "Terry Pratchett",
+    "genreIds": ["fantasy", "speculative"],
+    "series": "Discworld",
+    "readByMe": false
+  },
+  "book_0021": {
+    "id": "book_0021",
+    "title": "Babel",
+    "author": "R.F. Kuang",
+    "genreIds": ["resistance", "historical-fiction"],
+    "series": null,
+    "readByMe": true,
+    "platformIds": ["audible"]
+  },
+  "book_0022": {
+    "id": "book_0022",
+    "title": "Project Hail Mary",
+    "author": "Andy Weir",
+    "genreIds": ["sf", "speculative"],
+    "series": null,
+    "readByMe": true,
+    "platformIds": ["audible"]
+  },
+  "book_0023": {
+    "id": "book_0023",
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "genreIds": ["sf", "speculative", "political"],
+    "series": "Dune",
+    "readByMe": true,
+    "platformIds": ["libby"]
+  },
+  "book_0024": {
+    "id": "book_0024",
+    "title": "Nine Perfect Strangers",
+    "author": "Liane Moriarty",
+    "genreIds": ["contemporary-fiction"],
+    "series": null,
+    "readByMe": true,
+    "platformIds": ["libby"]
+  },
+  "book_0025": {
+    "id": "book_0025",
+    "title": "The Golden Compass",
+    "author": "Philip Pullman",
+    "genreIds": ["fantasy", "speculative"],
+    "series": "His Dark Materials",
+    "readByMe": true,
+    "platformIds": ["libby"]
+  },
+  "book_0026": {
+    "id": "book_0026",
+    "title": "Artemis",
+    "author": "Andy Weir",
+    "genreIds": ["sf", "speculative"],
+    "series": null,
+    "readByMe": true,
+    "platformIds": ["audible"]
+  },
+  "book_0027": {
+    "id": "book_0027",
+    "title": "The Casual Vacancy",
+    "author": "J.K. Rowling",
+    "genreIds": ["contemporary-fiction"],
+    "series": null,
+    "readByMe": true,
+    "platformIds": ["audible"]
+  },
+  "book_0028": {
+    "id": "book_0028",
+    "title": "Yes Please",
+    "author": "Amy Poehler",
+    "genreIds": ["biography"],
+    "series": null,
+    "readByMe": true,
+    "platformIds": ["audible"]
+  },
+  "book_0029": {
+    "id": "book_0029",
+    "title": "Bossypants",
+    "author": "Tina Fey",
+    "genreIds": ["biography"],
+    "series": null,
+    "readByMe": true,
+    "platformIds": ["audible"]
+  },
+  "book_0030": {
+    "id": "book_0030",
+    "title": "Born Standing Up",
+    "author": "Steve Martin",
+    "genreIds": ["biography"],
+    "series": null,
+    "readByMe": true,
+    "platformIds": ["audible"]
+  },
+  "book_0031": {
+    "id": "book_0031",
+    "title": "The Botany of Desire",
+    "author": "Michael Pollan",
+    "genreIds": ["nonfiction"],
+    "series": null,
+    "readByMe": true,
+    "platformIds": ["audible"]
+  },
+  "book_0032": {
+    "id": "book_0032",
+    "title": "Cooked",
+    "author": "Michael Pollan",
+    "genreIds": ["nonfiction"],
+    "series": null,
+    "readByMe": true,
+    "platformIds": ["audible"]
+  },
+  "book_0033": {
+    "id": "book_0033",
+    "title": "Gumption",
+    "author": "Nick Offerman",
+    "genreIds": ["nonfiction", "biography"],
+    "series": null,
+    "readByMe": true,
+    "platformIds": ["audible"]
+  },
+  "book_0034": {
+    "id": "book_0034",
+    "title": "Every Tool's a Hammer",
+    "author": "Adam Savage",
+    "genreIds": ["nonfiction"],
+    "series": null,
+    "readByMe": true,
+    "platformIds": ["audible"]
+  },
+  "book_0035": {
+    "id": "book_0035",
+    "title": "Dungeon Crawler Carl",
+    "author": "Matt Dinniman",
+    "genreIds": ["sf", "fantasy"],
+    "series": "Dungeon Crawler Carl",
+    "readByMe": true,
+    "platformIds": ["audible"]
+  },
+  "book_0036": {
+    "id": "book_0036",
+    "title": "A Wizard of Earthsea",
+    "author": "Ursula K. Le Guin",
+    "genreIds": ["fantasy", "speculative"],
+    "series": "Earthsea",
+    "readByMe": true,
+    "platformIds": ["audible"]
+  },
+  "book_0037": {
+    "id": "book_0037",
+    "title": "The Kaiju Preservation Society",
+    "author": "John Scalzi",
+    "genreIds": ["sf", "speculative"],
+    "series": null,
+    "readByMe": true,
+    "platformIds": ["audible"]
+  },
+  "book_0038": {
+    "id": "book_0038",
+    "title": "Fahrenheit 451",
+    "author": "Ray Bradbury",
+    "genreIds": ["sf", "speculative"],
+    "series": null,
+    "readByMe": true,
+    "platformIds": ["audible"]
+  },
+  "book_0039": {
+    "id": "book_0039",
+    "title": "The Curious Incident of the Dog in the Night-Time",
+    "author": "Mark Haddon",
+    "genreIds": ["contemporary-fiction"],
+    "series": null,
+    "readByMe": true,
+    "platformIds": ["audible"]
+  },
+  "book_0040": {
+    "id": "book_0040",
+    "title": "Dawnshard",
+    "author": "Brandon Sanderson",
+    "genreIds": ["fantasy"],
+    "series": "The Stormlight Archive",
+    "readByMe": true,
+    "platformIds": ["audible", "hardback"]
+  },
+  "book_0041": {
+    "id": "book_0041",
+    "title": "Isles of the Emberdark",
+    "author": "Various",
+    "genreIds": ["fantasy"],
+    "series": null,
+    "readByMe": true,
+    "platformIds": ["audible"]
+  },
+  "book_0042": {
+    "id": "book_0042",
+    "title": "Fuzzy Nation",
+    "author": "John Scalzi",
+    "genreIds": ["sf", "speculative"],
+    "series": null,
+    "readByMe": true,
+    "platformIds": ["audible"]
+  },
+  "book_0043": {
+    "id": "book_0043",
+    "title": "When the Moon Hits Your Eye",
+    "author": "John Scalzi",
+    "genreIds": ["sf", "speculative"],
+    "series": null,
+    "readByMe": true,
+    "platformIds": ["audible"]
+  },
+  "book_0044": {
+    "id": "book_0044",
+    "title": "The Martian",
+    "author": "Andy Weir",
+    "genreIds": ["sf", "speculative"],
+    "series": null,
+    "readByMe": true,
+    "platformIds": ["audible"]
+  },
+  "book_0045": {
+    "id": "book_0045",
+    "title": "Daughter of the Moon Goddess",
+    "author": "Sue Lynn Tan",
+    "genreIds": ["fantasy"],
+    "series": "The Celestial Kingdom",
+    "readByMe": true,
+    "platformIds": ["chirp"]
+  },
+  "book_0046": {
+    "id": "book_0046",
+    "title": "The Long Way to a Small, Angry Planet",
+    "author": "Becky Chambers",
+    "genreIds": ["sf", "speculative"],
+    "series": "Wayfarers",
+    "readByMe": true,
+    "platformIds": ["chirp"]
+  },
+  "book_0047": {
+    "id": "book_0047",
+    "title": "A Psalm for the Wild-Built",
+    "author": "Becky Chambers",
+    "genreIds": ["sf", "speculative"],
+    "series": "Monk & Robot",
+    "readByMe": true,
+    "platformIds": ["chirp"]
+  },
+  "book_0048": {
+    "id": "book_0048",
+    "title": "The Ocean at the End of the Lane",
+    "author": "Neil Gaiman",
+    "genreIds": ["fantasy", "speculative"],
+    "series": null,
+    "readByMe": true,
+    "platformIds": ["chirp"]
+  },
+  "book_0049": {
+    "id": "book_0049",
+    "title": "Yumi and the Nightmare Painter",
+    "author": "Brandon Sanderson",
+    "genreIds": ["fantasy"],
+    "series": null,
+    "readByMe": true,
+    "platformIds": ["chirp"]
+  },
+  "book_0050": {
+    "id": "book_0050",
+    "title": "The Sunlit Man",
+    "author": "Brandon Sanderson",
+    "genreIds": ["fantasy", "sf"],
+    "series": null,
+    "readByMe": true,
+    "platformIds": ["chirp"]
+  },
+  "book_0051": {
+    "id": "book_0051",
+    "title": "Tress of the Emerald Sea",
+    "author": "Brandon Sanderson",
+    "genreIds": ["fantasy"],
+    "series": null,
+    "readByMe": true,
+    "platformIds": ["chirp"]
+  },
+  "book_0052": {
+    "id": "book_0052",
+    "title": "Warbreaker",
+    "author": "Brandon Sanderson",
+    "genreIds": ["fantasy"],
+    "series": null,
+    "readByMe": true,
+    "platformIds": ["chirp"]
+  },
+  "book_0053": {
+    "id": "book_0053",
+    "title": "The Way of Kings",
+    "author": "Brandon Sanderson",
+    "genreIds": ["fantasy"],
+    "series": "The Stormlight Archive",
+    "readByMe": true,
+    "platformIds": ["paperback", "audible"]
+  },
+  "book_0054": {
+    "id": "book_0054",
+    "title": "Words of Radiance",
+    "author": "Brandon Sanderson",
+    "genreIds": ["fantasy"],
+    "series": "The Stormlight Archive",
+    "readByMe": true,
+    "platformIds": ["paperback", "audible"]
+  },
+  "book_0055": {
+    "id": "book_0055",
+    "title": "Oathbringer",
+    "author": "Brandon Sanderson",
+    "genreIds": ["fantasy"],
+    "series": "The Stormlight Archive",
+    "readByMe": true,
+    "platformIds": ["paperback", "audible"]
+  },
+  "book_0056": {
+    "id": "book_0056",
+    "title": "Rhythm of War",
+    "author": "Brandon Sanderson",
+    "genreIds": ["fantasy"],
+    "series": "The Stormlight Archive",
+    "readByMe": true,
+    "platformIds": ["audiobooks-com"]
+  },
+  "book_0057": {
+    "id": "book_0057",
+    "title": "Wind and Truth",
+    "author": "Brandon Sanderson",
+    "genreIds": ["fantasy"],
+    "series": "The Stormlight Archive",
+    "readByMe": true,
+    "platformIds": ["audible", "kindle"]
+  },
+  "book_0058": {
+    "id": "book_0058",
+    "title": "Alien Clay",
+    "author": "Adrian Tchaikovsky",
+    "genreIds": ["sf", "speculative"],
+    "readByMe": false
+  },
+  "book_0059": {
+    "id": "book_0059",
+    "title": "Mushroom Blues",
+    "author": "Adrian M. Gibson",
+    "genreIds": ["sf", "speculative"],
+    "series": "The Hofmann Report",
+    "readByMe": false
+  },
+  "book_0060": {
+    "id": "book_0060",
+    "title": "Sabriel",
+    "author": "Garth Nix",
+    "genreIds": ["fantasy"],
+    "series": "Old Kingdom",
+    "readByMe": false
+  },
+  "book_0061": {
+    "id": "book_0061",
+    "title": "Children of Time",
+    "author": "Adrian Tchaikovsky",
+    "genreIds": ["sf", "speculative"],
+    "series": "Children of Time",
+    "readByMe": false
+  },
+  "book_0062": {
+    "id": "book_0062",
+    "title": "Service Model",
+    "author": "Adrian Tchaikovsky",
+    "genreIds": ["sf", "speculative"],
+    "readByMe": false
+  },
+  "book_0063": {
+    "id": "book_0063",
+    "title": "Jade City",
+    "author": "Fonda Lee",
+    "genreIds": ["fantasy"],
+    "series": "Green Bone Saga",
+    "readByMe": false
+  },
+  "book_0064": {
+    "id": "book_0064",
+    "title": "Republic of Memory",
+    "author": "Mahmud El Sayed",
+    "genreIds": ["sf", "speculative"],
+    "readByMe": false
+  },
+  "book_0065": {
+    "id": "book_0065",
+    "title": "Rakesfall",
+    "author": "Vajra Chandrasekera",
+    "genreIds": ["fantasy", "speculative"],
+    "readByMe": false
+  },
+  "book_0066": {
+    "id": "book_0066",
+    "title": "We Burned So Bright",
+    "author": "TJ Klune",
+    "genreIds": ["speculative", "lgbtq"],
+    "readByMe": false
+  },
+  "book_0067": {
+    "id": "book_0067",
+    "title": "Mycelium Running",
+    "author": "Paul Stamets",
+    "genreIds": ["nonfiction"],
+    "readByMe": false
+  },
+  "book_0068": {
+    "id": "book_0068",
+    "title": "Paranoia: A Psychologist's Journey Into Extreme Mistrust and Anxiety",
+    "author": "Joseph Finder",
+    "genreIds": ["nonfiction"],
+    "readByMe": false
+  },
+  "book_0069": {
+    "id": "book_0069",
+    "title": "Against Our Will",
+    "author": "Susan Brownmiller",
+    "genreIds": ["nonfiction", "political"],
+    "readByMe": false
+  },
+  "book_0070": {
+    "id": "book_0070",
+    "title": "Native Nations: A Millennium in North America",
+    "author": "Kathleen DuVal",
+    "genreIds": ["nonfiction"],
+    "readByMe": false
+  },
+  "book_0071": {
+    "id": "book_0071",
+    "title": "Breath: The New Science of a Lost Art",
+    "author": "James Nestor",
+    "genreIds": ["nonfiction"],
+    "readByMe": false
+  },
+  "book_0072": {
+    "id": "book_0072",
+    "title": "Becoming Earth",
+    "author": "Ferris Jabr",
+    "genreIds": ["nonfiction"],
+    "series": null,
+    "readByMe": false
+  },
+  "book_0073": {
+    "id": "book_0073",
+    "title": "A Brief History of Earth",
+    "author": "Andrew H. Knoll",
+    "genreIds": ["nonfiction"],
+    "series": null,
+    "readByMe": false
+  },
+  "book_0074": {
+    "id": "book_0074",
+    "title": "Bowling Alone",
+    "author": "Robert D. Putnam",
+    "genreIds": ["nonfiction"],
+    "readByMe": false
+  },
+  "book_0075": {
+    "id": "book_0075",
+    "title": "The Golden Arches in Black America",
+    "author": "Marcia Chatelain",
+    "genreIds": ["nonfiction", "political"],
+    "series": null,
+    "readByMe": false
+  },
+  "book_0076": {
+    "id": "book_0076",
+    "title": "Heretical Fishing",
+    "author": "Haylock Jobson",
+    "genreIds": ["fantasy"],
+    "series": "Heretical Fishing",
+    "readByMe": false
+  }
+}

@@ -5,8 +5,10 @@ export default function ColorModeButton() {
   const { colorMode, toggleColorMode } = useColorMode()
   const buttonIcon = colorMode === 'light' ? <SunIcon /> : <MoonIcon />
   return (
-    <Button onClick={toggleColorMode} rightIcon={buttonIcon}>
-      Color Mode: 
+    <Button onClick={toggleColorMode} rightIcon={buttonIcon}
+      size={{ base: 'sm', md: 'md' }}
+    >
+      Color Mode:
     </Button>
   )
 }
